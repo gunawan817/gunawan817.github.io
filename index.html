@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Gunawan Saputra" />
+    <title>Gunawan Saputra</title>
+    <!--Link-->
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <a href="index.html"><span>//</span> Gunawan Saputra</a>
+    </nav>
+
+    <section>
+      <div class="title">
+        <h1>I'm a <span>Student</span></h1>
+      </div>
+      <div class="intro">
+        <div class="introBox">
+          <p>
+            Halo, Perkenalkan nama saya Gunawan Saputra. Saya berasal dari Riau yang merantau ke Yogyakarta untuk menuntut ilmu. Saya mulai suka dengan Web Development semenjak kuliah semester 2 karena mendapatkan mata kuliah pemrograman
+            web client. Disitu saya tahu bagaimana membuat website dengan menggunakan teknologi yang ada pada saat ini.
+          </p>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skillBox">
+          <h1><span>//</span> Skill</h1>
+          <div class="imgBox">
+            <img src="images/html.svg" title="HTML" />
+            <img src="images/css.svg" title="CSS" />
+            <img src="images/bootstrap.svg" title="Bootstrap" />
+          </div>
+          <div class="imgBox">
+            <img src="images/javascript.svg" title="JavaScript" />
+            <img src="images/php.svg" title="PHP" />
+            <img src="images/java.svg" title="Java" />
+          </div>
+        </div>
+      </div>
+      <div class="about">
+        <div class="profil">
+          <h1><span>//</span> About</h1>
+        </div>
+        <div class="imgBox">
+          <img src="images/users-img.jpg" />
+        </div>
+        <div class="textBox">
+          <p>
+            Saya seorang mahasiswa Informatika di salah satu STMIK yang ada di Yogyakarta. Sebelumnya saya tidak memiliki basic apapun tentang pemrograman karena asal sekolah saya SMA bukan SMK. Alasan saya masuk kuliah dengan memilih
+            program studi Informatika karena peluang kerja yang begitu luas. Walaupun saya tidak memiliki basic pemrograman, saya tetap berusaha untuk belajar tahap demi tahap. Menurut saya programming itu asik, seru dan bisa dimana saja
+            kapan saja.
+          </p>
+        </div>
+        <div class="sci">
+          <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:gunawansaputra191@gmail.com" title="Email"><i class="far fa-envelope"></i></a>
+          <a href="#" title="Github"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <h1>Made with <span style="color: #e25555">&hearts;</span> by Gunawan Saputra</h1>
+      <div class="myBtn">
+        <h2 onclick="topFunction()" id="myBtn" title="Go to top">Go to Top</h2>
+      </div>
+    </footer>
+
+    <script>
+      // Javascript add navbar shadow
+      window.addEventListener("scroll", (e) => {
+        const nav = document.querySelector(".navbar");
+        if (window.pageYOffset > 0) {
+          navbar.classList.add("add-shadow");
+        } else {
+          navbar.classList.remove("add-shadow");
+        }
+      });
+
+      //Mengambil element
+      var mybutton = document.getElementById("myBtn");
+
+      // Ketika di klik, scroll ke bagian paling atas
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+  </body>
+</html>
