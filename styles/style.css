@@ -199,11 +199,26 @@ section {
 .about .sci a {
   display: inline-block;
   margin: 0 1rem;
-}
-
-.about .sci a i {
   color: #fff !important;
   font-size: 1.2rem;
+}
+
+/* .about .sci a i {
+  color: #fff !important;
+  font-size: 1.2rem;
+} */
+
+.about .sci a .instagram:hover {
+  color: #fd1d1d;
+}
+.about .sci a .linkedin:hover {
+  color: #00a0dc;
+}
+.about .sci a .whatsapp:hover {
+  color: #00e676;
+}
+.about .sci a .telegram:hover {
+  color: #0088cc;
 }
 
 /* footer {
@@ -269,5 +284,12 @@ footer .myBtn h2:hover {
   }
   .skill .imgBox img {
     width: 80px;
+  }
+}
+
+@media (max-width: 359px) {
+  .about .sci a i {
+    color: #fff !important;
+    font-size: 0.9rem;
   }
 }
